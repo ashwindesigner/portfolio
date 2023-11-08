@@ -1,0 +1,246 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  outline: none;
+  transition: width 0.2s;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.navbar {
+  background: #fff !important;
+  border-bottom: 2px solid #e7e7e7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  padding-bottom: 4px !important;
+  padding-top: 10px;
+}
+.navbar ul li {
+  margin: 0 10px;
+}
+.navbar ul li a {
+  padding: 0 !important;
+}
+
+.navbar ul li {
+  margin: 7px 30px 20px;
+}
+
+.navbar ul li a {
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar ul li a.active::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 5px;
+  background: #ffd25d;
+  border-radius: 3px;
+  bottom: -11px;
+}
+
+body {
+  background: #fbfbfb;
+}
+
+.profile-box {
+  width: 60%;
+  margin: 15vh auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.profile-box .profile-pic {
+  position: relative;
+  float: left;
+}
+.profile-box .profile-pic img {
+  max-width: 500px;
+  float: right;
+}
+.profile-box .profile-details {
+  float: right;
+  margin-top: 15vh;
+}
+.profile-box .profile-details h1 {
+  font-size: 4vw;
+  font-weight: 600;
+  color: #333;
+}
+.profile-box .profile-details h3 {
+  font-size: 4vh;
+  font-weight: 300;
+}
+.profile-box .profile-details .btn-main {
+  background: #ffd25d;
+  padding: 15px 30px;
+  font-size: 1.4vw;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 29px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  font-weight: 500;
+  color: #333;
+  outline: none;
+  margin-top: 20px;
+  float: left;
+  transition: width 0.2s;
+}
+.profile-box .profile-details .btn-main:hover {
+  text-decoration: none;
+  box-shadow: none;
+  transition: width 0.2s;
+}
+
+section {
+  margin-bottom: 10px;
+  height: auto;
+  float: left;
+  width: 100%;
+  color: #555;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+section .content-box {
+  max-width: 1200px;
+  width: 80%;
+  margin: 40px auto;
+}
+section .content-box .heading-text {
+  position: relative;
+}
+section .content-box .heading-text:after {
+  content: "";
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  border-radius: 280px;
+  top: -99px;
+  background-image: url(../images/backup/heading-bg.png);
+  opacity: 0.3;
+  left: 0;
+  z-index: -1;
+}
+section .content-box .heading-text span {
+  font-size: 3vw;
+  font-weight: 700;
+  padding-left: 80px;
+  position: relative;
+}
+section .content-box .heading-text span:after {
+  content: "";
+  height: 15px;
+  width: 43%;
+  background: #ffd25d;
+  position: absolute;
+  bottom: -29px;
+  left: 80px;
+  border-radius: 4px;
+}
+section .content-box .heading-text a {
+  text-align: right;
+  float: right;
+  margin-right: 2%;
+}
+section .content-box P {
+  FLOAT: LEFT;
+  font-size: 1.2vw;
+  line-height: 2.2vw;
+  font-weight: 200;
+  margin: 0 10%;
+  color: #333;
+  text-align: justify;
+}
+
+em.circle-me {
+  width: 20%;
+  float: left;
+  height: auto;
+  border-radius: 130px;
+  margin: 55px -5px 70px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20pt;
+  font-style: normal;
+  font-family: "Kalam", cursive;
+  color: #fff;
+  PADDING: 8% 10px;
+}
+
+.exp-details img.timeline {
+  width: 90%;
+  margin: 30px 5% 50px;
+}
+
+img.skill {
+  width: 100%;
+}
+
+.face-bg img {
+  position: absolute;
+  width: 100%;
+  margin-top: 8%;
+}
+
+* {
+  transition: width 0.1s linear 0.2s;
+}
+
+.contact-details {
+  margin-top: 130px;
+  text-align: right;
+  float: left;
+  padding-right: 50px;
+}
+.contact-details span {
+  margin-bottom: 23px;
+  float: left;
+  width: 100%;
+}
+.contact-details span h5 {
+  font-weight: 700;
+}
+.contact-details span span {
+  font-weight: 300;
+}
+
+.media-links {
+  float: left;
+  margin-top: 130px;
+  border-left: 1px dashed;
+  height: 200px;
+  padding-left: 50px;
+}
+.media-links .link {
+  margin-bottom: 32px;
+}
+.media-links .link a img {
+  margin-right: 20px;
+}
+
+.footer {
+  float: left;
+  text-align: center;
+  margin-top: 230px;
+}
+.footer:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background: #bbbbbb;
+  left: 0;
+  top: 48px;
+  z-index: -1;
+}
+.footer img {
+  width: 100px;
+  background: #fbfbfb;
+}/*# sourceMappingURL=custom.css.map */
