@@ -60,14 +60,14 @@
         <span class="face-bg"><img width="100%" src="images/backup/face-bg.svg"/></span>
         <div class="profile-box">
           
-            <!-- <span class="profile-pic col-md-6  col-sm-12"> <img width="100%" src="images/backup/profile-pic.svg"/> -->
-            <!-- <img class="mesylines" src="images/backup/messy_lines.png"> -->
+            <span class="profile-pic col-sm-12"> <img width="100%" src="images/backup/profile-pic.svg"/> 
+            <!-- <img class="mesylines" src="images/backup/messy_lines.png">  -->
             </span>
             
-            <span class="profile-details  col-md-6 col-sm-12">
+            <span class="profile-details col-lg-6  col-md-6 col-sm-12">
                 <h1>I'm Ashwin</h1>
                 <h3>UI / UX Designer</h3>
-                <a class="btn-main" href="images/Ashwin-Resume.pdf" download >Download Resume</a>
+                <em><a class="btn-main" href="images/Ashwin-Resume.pdf" download >Download Resume</a></em>
             </span>
             
             
@@ -142,9 +142,9 @@
 
         <div class="media-links col-md-6 col-sm-12" >
 
-            <div class="link"><a href="https://www.behance.net/ashwinkumardesigner"><img src="images/Behance.png">behance.net/ashwinkumardesigner</a> </div>
-            <div class="link"><a href="https://dribbble.com/ashwindesigner"><img src="images/dribbble.png">dribbble.com/ashwindesigner</a> </div>
-            <div class="link"><a href="https://www.linkedin.com/in/ashwin-kumar-naidu/"><img src="images/linkedin.png">linkedin.com/in/ashwin-kumar-naidu/</a> </div>
+            <div class="link"><a href="https://www.behance.net/ashwinkumardesigner" target="_blank"><img src="images/Behance.png"><b>behance.net/ashwinkumardesigner</b></a> </div>
+            <div class="link"><a href="https://dribbble.com/ashwindesigner"  target="_blank"><img src="images/dribbble.png"><b>dribbble.com/ashwindesigner</b></a> </div>
+            <div class="link"><a href="https://www.linkedin.com/in/ashwin-kumar-naidu/"  target="_blank"><img src="images/linkedin.png"><b>linkedin.com/in/ashwin-kumar-naidu/</b></a> </div>
             
         </div>
         
@@ -173,7 +173,7 @@
 
         $(document).ready(function() {
     $(window).on('scroll', function() {
-      var scrollPosition = $(document).scrollTop();
+      var scrollPosition = $(document).scrollTop() + 20;
   
       $('section').each(function() {
         var currentSection = $(this);
