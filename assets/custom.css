@@ -181,8 +181,16 @@ em.circle-me {
   margin: 30px 5% 50px;
 }
 
+img.timeline-small {
+  display: none;
+}
+
 img.skill {
   width: 100%;
+}
+
+img.skill-small {
+  display: none;
 }
 
 .face-bg img {
@@ -363,5 +371,20 @@ img.skill {
     width: 100%;
     text-align: center;
     margin-top: 40px;
+  }
+  img.skill {
+    display: none;
+  }
+  img.skill-small {
+    display: block;
+    margin-top: 60px;
+    margin-left: 30%;
+  }
+  img.timeline {
+    display: none;
+  }
+  img.timeline-small {
+    display: block;
+    margin-left: 30%;
   }
 }/*# sourceMappingURL=custom.css.map */
