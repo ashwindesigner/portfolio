@@ -59,6 +59,7 @@ body{
     .profile-pic{
         position: relative;
         float: left;
+        display: none;
         img{
             max-width: 500px;
             float: right;
@@ -76,24 +77,27 @@ body{
             font-size: 4vh;
             font-weight: 300;
         }
-        .btn-main{
-            background: #ffd25d;
-            padding: 15px 30px;
-            font-size: 1.4vw;
-            border-radius: 10px;
-            border: none;
-            box-shadow: 0 0 29px rgba(0, 0, 0, 0.1);
-            margin-top: 15px;
-            font-weight: 500;
-            color: #333;
-            outline: none;
-            margin-top: 20px;
-            float: left;
-            transition: width 0.2s;
-            &:hover{
-                text-decoration: none;
-                box-shadow: none;
+        em{
+            .btn-main{
+                background: #ffd25d;
+                padding: 15px 30px;
+                font-size: 1.4vw;
+                border-radius: 10px;
+                border: none;
+                box-shadow: 0 0 29px rgba(0, 0, 0, 0.1);
+                margin-top: 15px;
+                font-weight: 500;
+                color: #333;
+                outline: none;
+                margin-top: 20px;
+                float: left;
                 transition: width 0.2s;
+                font-style: normal;
+                &:hover{
+                    text-decoration: none;
+                    box-shadow: none;
+                    transition: width 0.2s;
+                }
             }
         }
     }
@@ -115,6 +119,7 @@ section{
         margin: 40px auto;
         .heading-text{
             position: relative;
+            margin-bottom: 100px;
             &:after {
                 content: "";
                 width: 260px;
@@ -179,14 +184,21 @@ em.circle-me {
     width: 90%;
     margin: 30px 5% 50px;
 }
+img.timeline-small {
+    display: none;
+}
 img.skill {
     width: 100%;
 }
 
+img.skill-small{
+    display: none;
+}
 .face-bg img {
     position: absolute;
     width: 100%;
     margin-top: 8%;
+    display: block;
 }
 
 *{
@@ -200,7 +212,7 @@ img.skill {
 
 
 .contact-details {
-    margin-top: 130px;
+    margin-top: 60px;
     text-align: right;
     float: left;
     padding-right: 50px;
@@ -220,7 +232,7 @@ img.skill {
 
 .media-links {
     float: left;
-    margin-top: 130px;
+    margin-top: 60px;
     border-left: 1px dashed;
     height: 200px;
     padding-left: 50px;
@@ -235,7 +247,7 @@ img.skill {
 .footer {
     float: left;
     text-align: center;
-    margin-top: 230px;
+    margin-top: 150px;
     &:before {
         position: absolute;
         content: '';
@@ -252,3 +264,161 @@ img.skill {
         background: #fbfbfb;
     }
 }
+
+
+
+@media screen and (max-width: 990px) {
+    // body{
+    //     background: #e4e4e4;
+    // }
+    
+    .profile-box {
+        width: 100%;
+        margin: 23vh auto;
+        float: left;
+        position: relative;
+        .profile-pic{
+            text-align: center;
+            width: 100%;
+            display: block;
+            position: relative;
+            float: none;
+            img{
+                float: none;
+                display: block !important;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+         }
+
+         .profile-details{
+            float: none;
+            margin-top: 0;
+            text-align: center;
+            em{
+                float: left;
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+                a{
+                    float: none !important;
+                    font-size: 20px !important;
+                }
+            }
+            h1 {
+                font-size: 40px;
+                font-weight: 600;
+                color: #333;
+            }
+            h3 {
+                font-size: 25px;
+                font-weight: 300;
+            }
+         }
+    }
+    .face-bg img{
+        display: none ;
+    }
+
+
+    section .content-box .heading-text:after {
+        content: "";
+        width: 0;
+        height: 0;
+        top: 0;     
+    }
+
+    section .content-box .heading-text {
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    section .content-box .heading-text span {
+        font-size: 30px;
+        font-weight: 700;
+        padding-left: 0;
+        position: relative;
+        &:after {
+            content: "";
+            height: 6px;
+            width: 43%;
+            background: #ffd25d;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            border-radius: 4px;
+        }
+    }
+
+    section .content-box P {
+        FLOAT: LEFT;
+        font-size: 17px;
+        line-height: 37px;
+        margin: 0 0%;
+        text-align: left;
+    }
+
+    .circle-me{
+        display: none;
+    }
+
+    section{
+        min-height: auto;
+    }
+
+
+    
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact-details {
+        text-align: left;
+        padding: 0;
+    }
+    .media-links{
+        border-left: none;
+        padding: 0;
+        margin-top: 0;
+        a b{
+            display: none;
+        }
+    }
+
+    .media-links .link {
+        margin-bottom: 32px;
+        width: 20%;
+        float: left;
+        text-align: left;
+    }
+    .media-links .link a img{
+        margin: 0;
+    }
+    section .content-box .heading-text a {
+        margin-right: 2%;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    img.skill {
+        display: none;
+    }
+    
+    img.skill-small{
+        display: block;
+        margin-top: 60px;
+        
+    }
+
+    img.timeline{
+        display: none;
+        
+    }
+    img.timeline-small{
+        display: block;
+       
+    }
+}
+
