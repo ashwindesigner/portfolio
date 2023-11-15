@@ -59,6 +59,7 @@ body {
 .profile-box .profile-pic {
   position: relative;
   float: left;
+  display: none;
 }
 .profile-box .profile-pic img {
   max-width: 500px;
@@ -77,7 +78,7 @@ body {
   font-size: 4vh;
   font-weight: 300;
 }
-.profile-box .profile-details .btn-main {
+.profile-box .profile-details em .btn-main {
   background: #ffd25d;
   padding: 15px 30px;
   font-size: 1.4vw;
@@ -91,8 +92,9 @@ body {
   margin-top: 20px;
   float: left;
   transition: width 0.2s;
+  font-style: normal;
 }
-.profile-box .profile-details .btn-main:hover {
+.profile-box .profile-details em .btn-main:hover {
   text-decoration: none;
   box-shadow: none;
   transition: width 0.2s;
@@ -114,6 +116,7 @@ section .content-box {
 }
 section .content-box .heading-text {
   position: relative;
+  margin-bottom: 100px;
 }
 section .content-box .heading-text:after {
   content: "";
@@ -186,6 +189,7 @@ img.skill {
   position: absolute;
   width: 100%;
   margin-top: 8%;
+  display: block;
 }
 
 * {
@@ -193,7 +197,7 @@ img.skill {
 }
 
 .contact-details {
-  margin-top: 130px;
+  margin-top: 60px;
   text-align: right;
   float: left;
   padding-right: 50px;
@@ -212,7 +216,7 @@ img.skill {
 
 .media-links {
   float: left;
-  margin-top: 130px;
+  margin-top: 60px;
   border-left: 1px dashed;
   height: 200px;
   padding-left: 50px;
@@ -227,7 +231,7 @@ img.skill {
 .footer {
   float: left;
   text-align: center;
-  margin-top: 230px;
+  margin-top: 150px;
 }
 .footer:before {
   position: absolute;
@@ -243,4 +247,121 @@ img.skill {
 .footer img {
   width: 100px;
   background: #fbfbfb;
+}
+
+@media screen and (max-width: 990px) {
+  .profile-box {
+    width: 100%;
+    margin: 23vh auto;
+    float: left;
+    position: relative;
+  }
+  .profile-box .profile-pic {
+    text-align: center;
+    width: 100%;
+    display: block;
+    position: relative;
+    float: none;
+  }
+  .profile-box .profile-pic img {
+    float: none;
+    display: block !important;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .profile-box .profile-details {
+    float: none;
+    margin-top: 0;
+    text-align: center;
+  }
+  .profile-box .profile-details em {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .profile-box .profile-details em a {
+    float: none !important;
+    font-size: 20px !important;
+  }
+  .profile-box .profile-details h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+  }
+  .profile-box .profile-details h3 {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .face-bg img {
+    display: none;
+  }
+  section .content-box .heading-text:after {
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+  }
+  section .content-box .heading-text {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  section .content-box .heading-text span {
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 0;
+    position: relative;
+  }
+  section .content-box .heading-text span:after {
+    content: "";
+    height: 6px;
+    width: 43%;
+    background: #ffd25d;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 4px;
+  }
+  section .content-box P {
+    FLOAT: LEFT;
+    font-size: 17px;
+    line-height: 37px;
+    margin: 0 10%;
+    text-align: center;
+  }
+  .circle-me {
+    display: none;
+  }
+  section {
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-details {
+    text-align: center;
+    padding: 0;
+  }
+  .media-links {
+    border-left: none;
+    padding: 0;
+    margin-top: 0;
+  }
+  .media-links a b {
+    display: none;
+  }
+  .media-links .link {
+    margin-bottom: 32px;
+    width: 33%;
+    float: left;
+    text-align: center;
+  }
+  .media-links .link a img {
+    margin: 0;
+  }
+  section .content-box .heading-text a {
+    margin-right: 2%;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=custom.css.map */
