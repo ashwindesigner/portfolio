@@ -29,3 +29,7 @@
 .box-collapse{
     display: none;
 }
+
+.intro .intro-item {
+    padding-top: 0;
+}
