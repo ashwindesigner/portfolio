@@ -33,6 +33,30 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+  <style>
+    
+.navbar-default.navbar-trans {
+    backface-visibility: hidden;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: none;
+}
+
+.navbar-default.navbar-trans .nav-link{
+    color: #fff;
+}
+
+.navbar-default.navbar-trans .nav-link.active{
+    color: #fff;
+}
+
+.navbar-default.navbar-trans .logo-wit{
+    display: block !important;
+}
+
+.navbar-default.navbar-trans .logo-def{
+    display: none !important;
+}
+  </style>
 </head>
 
 <body>
@@ -140,7 +164,10 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html"><img src="img/img-ss/ss-logo.png"/></a>
+      <a class="navbar-brand text-brand" href="index.html">
+        <img class="logo-def" src="img/img-ss/ss-logo.png"/>
+        <img class="logo-wit" style="display: none;" src="img/img-ss/ss-logo-white.png"/>
+      </a>
       
       <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
         data-target="" aria-expanded="false">
@@ -267,7 +294,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   </div>
   <!--/ Carousel end /-->
